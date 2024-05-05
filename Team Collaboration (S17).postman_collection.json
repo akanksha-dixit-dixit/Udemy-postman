@@ -16,7 +16,7 @@
 							"// Fixed syntax error\r",
 							"const res = pm.response;\r",
 							"\r",
-							"pm.test('Testing for 200:OK', () => \r",
+							"pm.test('Checking status for 200:OK', () => \r",
 							"    pm.expect(res).to.have.status(200)\r",
 							");"
 						],
@@ -27,8 +27,11 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [],
-						"type": "text/javascript"
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
 					}
 				}
 			],
